@@ -11,110 +11,12 @@ function MainComponent() {
 
     return (<> < Center > 
     
-    <Flex w={"100vh"} h={"100vw"} flexDir={"column"} className='MainRank'>
+    <Flex w={"70vh"} h={"100vw"} flexDir={"column"}>
         <Text margin={"0 auto"}
-         lineHeight={"10vh"}
-          fontSize={"2xl"}>
-            무신사 랭킹</Text>
+        >
 
-
-        <Flex>
-            
-        <SimpleGrid 
-        columns={1} 
-        spacingY={5} 
-        padding={5}>
-            { isLoading ? null:
-                data.data.map((item, index) => {
-                    return (
-                        <Box height='100px' 
-                        border="0.5px solid #e4e4e4"
-                        padding={3}
-                        shadow={"md"}>
-                            <Flex 
-                            marginTop={3} 
-                            height={"60px"} 
-                            flexDir={"column"}  
-                            justifyContent={"space-between"}>                                    
-                            <Text 
-                            w={"100%"}
-                            fontWeight={"bold"}
-                            whiteSpace={"nowrap"}
-                            overflow={"hidden"}
-                            textOverflow={"ellipsis"}>
-                            {item[3]}
-                            </Text>
-                                <Text>
-                                    {item[4]}
-                                </Text>
-                            </Flex>
-                        </Box>
-                    )
-                })
-            }
-        </SimpleGrid>
-        <SimpleGrid columns={1} spacingY={5} padding={5}>
-            { isLoading ? null:
-                data.data.map((item, index) => {
-                    return (
-                        <Box height='100px' 
-                        border="0.5px solid #e4e4e4"
-                        padding={3}
-                        shadow={"md"}>
-                            <Flex 
-                            marginTop={3} 
-                            height={"60px"} 
-                            flexDir={"column"}  
-                            justifyContent={"space-between"}>                                    
-                            <Text 
-                            w={"100%"}
-                            fontWeight={"bold"}
-                            whiteSpace={"nowrap"}
-                            overflow={"hidden"}
-                            textOverflow={"ellipsis"}>
-                            {item[3]}
-                            </Text>
-                                <Text>
-                                    {item[4]}
-                                </Text>
-                            </Flex>
-                        </Box>
-                    )
-                })
-            }
-        </SimpleGrid>
-        <SimpleGrid columns={1} spacingY={5} padding={5}>
-            { isLoading ? null:
-                data.data.map((item, index) => {
-                    return (
-                        <Box height='100px' 
-                        border="0.5px solid #e4e4e4"
-                        padding={3}
-                        shadow={"md"}>
-                            <Flex 
-                            marginTop={3} 
-                            height={"60px"} 
-                            flexDir={"column"}  
-                            justifyContent={"space-between"}>                                    
-                            <Text 
-                            w={"100%"}
-                            fontWeight={"bold"}
-                            whiteSpace={"nowrap"}
-                            overflow={"hidden"}
-                            textOverflow={"ellipsis"}>
-                            {item[3]}
-                            </Text>
-                                <Text>
-                                    {item[4]}
-                                </Text>
-                            </Flex>
-                        </Box>
-                    )
-                })
-            }
-        </SimpleGrid>
-
-        </Flex>
+        </Text>
+        
 
     </Flex>
 </Center> </>
